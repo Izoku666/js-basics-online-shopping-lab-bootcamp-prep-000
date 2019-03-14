@@ -99,6 +99,8 @@ function removeFromCart(item) {
       else continue;
     }
   } */
+  
+  
   for(let i = 0; i < cart.length; i++)
   {
     if(!cart.includes(item))
