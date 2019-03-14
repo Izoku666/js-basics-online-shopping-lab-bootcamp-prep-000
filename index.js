@@ -78,6 +78,8 @@ function removeFromCart(item) {
       cart.splice(i , 1);
       break;
     }
+    else if(i == cart.length && cart[i].itemName != c)
+    return "That item is not in your cart."
   }
   return cart; 
 }
