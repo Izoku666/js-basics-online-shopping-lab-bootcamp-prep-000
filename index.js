@@ -70,7 +70,7 @@ function removeFromCart(item) {
   //var c = cart.indexOf(item.itemName);
   	console.log("(Remove item) " + c);
 	
-	var found = false;
+	var found = false;  // who knew a simple bool could solve all of my problems
   console.log(`Cart Length: ${cart.length}`);
   for(let i = 0; i < cart.length; i++)
   {
