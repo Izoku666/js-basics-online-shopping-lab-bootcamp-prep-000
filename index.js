@@ -106,7 +106,7 @@ function removeFromCart(item) {
   
   for(let i = 0; i < cart.length; i++)
   {
-    else if(cart[i] != item)
+    if(cart[i] != item)
     {
       continue;
     }
