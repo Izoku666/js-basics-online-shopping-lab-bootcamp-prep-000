@@ -80,7 +80,7 @@ function removeFromCart(item) {
     }
   }
   
-  
+  if()
   return cart; 
 }
 
