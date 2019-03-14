@@ -90,7 +90,7 @@ function removeFromCart(item) {
     for(let i = 0; i < cart.length; i++)
     {
       console.log(`Going through cart, i = ${i} and is ${item[itemName]}`);
-      if(c[i].itemName == item.itemName)
+      if(c[i] == item)
       {
         //cart[i]= "Bingo";
         c.splice(i , 1);
