@@ -100,8 +100,9 @@ function removeFromCart(item) {
     }
   } */
   
-  if(!cart.includes(item))
+  if(!cart.includes(item)){
     return "That item is not in your cart."
+  }
   
   for(let i = 0; i < cart.length; i++)
   {
