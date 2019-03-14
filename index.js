@@ -22,7 +22,7 @@ function addToCart(item) {
   };
   
   cart.push(temp);
-
+  console.log(`${item} has been added to your cart`)
   return `${item} has been added to your cart.`
 }
 
@@ -132,7 +132,7 @@ function removeFromCart(item) {
   {
     return "That item is not in your cart."
   }
-  */
+  */ // 3/13 code, does not work
 
 
 function placeOrder(cardNumber) {
