@@ -70,17 +70,20 @@ function removeFromCart(item) {
   //var c = cart.indexOf(item.itemName);
   	console.log("(Remove item) " + c);
 	
+	var found = false;
   console.log(`Cart Length: ${cart.length}`);
   for(let i = 0; i < cart.length; i++)
   {
     if(cart[i].itemName == c)
     {
       cart.splice(i , 1);
+      found = true;
       break;
     }
   }
   
-  if()
+  if(!found)
+    return "That item is not in your cart."
   return cart; 
 }
 
