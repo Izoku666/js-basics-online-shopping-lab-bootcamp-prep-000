@@ -66,93 +66,21 @@ function total() {
 }
 
 function removeFromCart(item) {
-  
-  /*  // attempt 1: 3/14
-  if(!cart.includes(item))
-  return  "That item is not in your cart.";
-  
-  else
-  {
-    var index = cart.indexOf(item);
-    var c = cart.splice(index , 1);
-    return cart;
-  }
-  */  // attempt 1 (3/14)   standard include check, get the index of the item, and splice it out into a local var
-  
- /* var c = cart;
-  if(!c.includes(item))
-  {
-    return "That item is not in your cart."
-  }
-  
-  else
-  {
-    for(let i = 0; i < cart.length; i++)
-    {
-      console.log(`Going through cart, i = ${i} and is ${item[itemName]}`);
-      if(c[i] == item)
-      {
-        //cart[i]= "Bingo";
-        c.splice(i , 1);
-        return setCart(c);
-      }
-      else continue;
-    }
-  } */
-  
-  if(!cart.includes(item)){   // this passes fine
-    return "That item is not in your cart."
-  }
-  
-  else
+ 	var c = item;	// returns the string "Vanilla"
+  //var c = cart.indexOf(item.itemName);
+  	console.log("(Remove item) " + c);
+	
+  console.log(`Cart Length: ${cart.length}`);
   for(let i = 0; i < cart.length; i++)
   {
-    if(cart[i] != item)
+    if(cart[i].itemName == c)
     {
-      continue;
-    }
-    
-    else if(cart[i] == item)
-    {
-      var c = cart.splice(i , 1);
-      //cart.splice(i , 1);
-      return cart;
+      cart.splice(i , 1);
+      break;
     }
   }
-  
+  return cart; 
 }
-    
-/*      for(let i = 0; i < cart.length - 1; i++)  // changed length to length-1
-      {
-        //if(cart[i][itemName] == item[item.itemName])
-        if(cart[i].itemName == item.itemName)
-        {
-            //var c = cart.splice(i , 1);
-            //cart = c;
-            //cart.splice(i , 1);
-            //cart.splice(i + 1 , 1);
-            //cart.splice(i);
-            //cart.splice(i + 1);
-            //return cart;
-            //return cart.splice(i);
-            //return cart.splice(i + 1);
-            //return cart.splice(i , 1);
-            //return cart.splice(i + 1 , 1);
-            
-            //var c = cart.splice(i , 1);
-            //cart.splice(i , 1);
-            //cart.splice(i);
-            //cart.splice(i + 1);
-            return cart;
-        }
-      }
-  }
-  
-  else
-  {
-    return "That item is not in your cart."
-  }
-  */ // 3/13 code, does not work
 
 
 function placeOrder(cardNumber) {
