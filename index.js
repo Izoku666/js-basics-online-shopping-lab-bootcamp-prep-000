@@ -114,7 +114,7 @@ function removeFromCart(item) {
     
     else if(cart[i] == item)
     {
-      cart.splice(i , 0);
+      var c = cart.splice(i , 0);
       return cart;
     }
   }
