@@ -70,9 +70,6 @@ function removeFromCart(item) {
   //var c = cart.indexOf(item.itemName);
   	console.log("(Remove item) " + c);
 	
-	if(!cart.includes(item))
-	//if(!cart.includes(Object{itemName : item}))
-	  return "That item is not in your cart."
   console.log(`Cart Length: ${cart.length}`);
   for(let i = 0; i < cart.length; i++)
   {
