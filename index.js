@@ -79,7 +79,7 @@ function removeFromCart(item) {
   }
   */  // attempt 1 (3/14)   standard include check, get the index of the item, and splice it out into a local var
   
-  var c = cart;
+ /* var c = cart;
   if(!c.includes(item))
   {
     return "That item is not in your cart."
@@ -98,7 +98,7 @@ function removeFromCart(item) {
       }
       else continue;
     }
-  }
+  } */
   
 }
     
